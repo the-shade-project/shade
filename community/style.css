@@ -5,6 +5,7 @@
   box-sizing: border-box;
   font-family: Poppins, "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS";
   scrollbar-color: dark;
+  -webkit-tap-highlight-color: transparent;
 }
 
 *::-webkit-scrollbar {
@@ -92,6 +93,7 @@ main {
 }
 
 .toolbar {
+    display: block;
 }
 
 .icon-inner:hover {
@@ -235,8 +237,9 @@ main .sidebar {
 }
 
 .playground {
-  /* position: absolute;
-    top: 0; */
+    position: sticky;  
+    top: 0;
+    padding: var(--margine);
 }
 /* Fotter Element */
 
