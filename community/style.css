@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
+;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+.tomato {
+    color: var(--pink);
+}
+
+:root {
+    --pink : hotpink;
+    --bg: black;
+    --color: #fff;
+    --lightbg: rgba(239, 149, 129, 0.498);
+
+}
+body {
+    min-height: 100vh;
+    color: var(--color);
+    background: var(--bg);
+    font-family: Poppins, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+nav {
+    background: var(--bg);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+    border-bottom: 2px solid ;
+    position: sticky;
+    top: 0;
+
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding:  0;
+    gap:  4rem;
+
+}
+nav ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: aliceblue;
+    font-size: larger;
+    font-size: 25px;
+    color: var(--bg);
+    border-radius: 50%;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    transition: all .3s ease-in;
+    
+}
+
+nav ul li:hover {
+    scale: 1.07;
+    opacity: 2;
+}
+
+
+
+/* Main Container */
+
+
+
+main {
+    border: 2px solid;
+    height: 100lvh;
+    display: flex;
+}
+
+main .posts {
+    border: 2px solid tomato;
+    height: 100vh;
+    width: 120%;
+    overflow: auto;
+}
+
+.newpost {
+    border: 2px solid skyblue;
+    padding: 20px;
+    height: 150px;
+    border-radius: 20px;
+    margin: 20px;
+
+}
+.newposts {
+    border: 2px solid blue;
+    overflow-y: scroll;
+    /* display: none; */
+}
+.post {
+    border: 2px solid;
+    min-height: 200px;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 20px;
+}
+.post .author {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+.post .author img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid hotpink ;
+
+}
+
+
+
+main .sidebar {
+    width: 100%;
+}
+
+
+
+/* Fotter Element */
+
+footer {
+    
+    /* display: flex; */
+    border-top: 2px solid ;
+    padding: 10px;
+    text-align: center;
+}
+footer span {
+    color: tomato;
+
+}
