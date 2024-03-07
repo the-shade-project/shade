@@ -3,24 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Shades</title>
+    <link rel="shortcut icon" href="/assets/sh.jpeg" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav>
         <div class="header">Shades</div> 
         <ul>
-            <a href="#"><li>H</li></a>
-            <a href="#"><li>I</li></a>
-            <a href="#"><li>N</li></a>
-            <a href="#"><li>D</li></a>
-            <a href="#"><li>I</li></a>
+            <a href="#"><li><ion-icon name="home-outline"></ion-icon></li></a>
+            <a href="#"><li><ion-icon name="search-outline"></ion-icon></li></a>
+            <a href="#"><li><ion-icon name="contrast-outline"></ion-icon></li></a>
+            <a href="#"><li><ion-icon name="flame-outline"></ion-icon></li></a>
+            <a href="#"><li><ion-icon name="person-circle-outline"></ion-icon></li></a>
         </ul>
     </nav>
     <main>
         <div class="posts">
             <div class="newpost">
-                <div class="p">Create New Post</div>
+                <div class="p"><textarea name="post" id="" cols="30" placeholder="Create New Post..." rows="10"></textarea></div>
+            </div>
+            <div class="menubar">
+                <ul>
+                    <li>Latest</li>
+                    <li>Top</li>
+                    <li>Popular</li>
+                </ul>
             </div>
             <div class="newposts">
                 <div class="post">
@@ -38,25 +46,80 @@
 
                     
                     <div class="post-footer">
-                        <div class="like">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path d="M256 360a16 16 0 01-9-2.78c-39.3-26.68-56.32-45-65.7-56.41-20-24.37-29.58-49.4-29.3-76.5.31-31.06 25.22-56.33 55.53-56.33 20.4 0 35 10.63 44.1 20.41a6 6 0 008.72 0c9.11-9.78 23.7-20.41 44.1-20.41 30.31 0 55.22 25.27 55.53 56.33.28 27.1-9.31 52.13-29.3 76.5-9.38 11.44-26.4 29.73-65.7 56.41A16 16 0 01256 360z"/></svg></div>
-                        <div class="dislike">Dislike</div>
-                        <div class="comment">Comment</div>
-                        <div class="share">Share</div>
+                        <div class="like"><ion-icon name="heart-outline"></ion-icon></div>
+                        <div class="dislike"><ion-icon name="heart-dislike-outline"></ion-icon></div>
+                        <div class="comment"><ion-icon name="chatbubble-ellipses-outline"></ion-icon></div>
+                        <div class="share"><ion-icon name="share-outline"></ion-icon></div>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="author">
+                        <div class="logo"><img src="/assets/sh.jpeg" alt=""></div>
+                        <div class="details"><span class="tomato">@</span>sh20raj<div class="date">20 minutes ago</div></div>
+                        
+                    </div>
+
+                    <div class="post-content">
+                        <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut atque in optio, enim vitae cum at debitis alias obcaecati fuga, expedita sapiente. Recusandae eius odit a autem quibusdam iure ipsa.
+                    </p>
+                    <!-- <img src="/assets/sh.jpeg" alt=""> -->
+                    </div>
+
+                    
+                    <div class="post-footer">
+                        <div class="like"><ion-icon name="heart-outline"></ion-icon></div>
+                        <div class="dislike"><ion-icon name="heart-dislike-outline"></ion-icon></div>
+                        <div class="comment"><ion-icon name="chatbubble-ellipses-outline"></ion-icon></div>
+                        <div class="share"><ion-icon name="share-outline"></ion-icon></div>
+                    </div>
+                </div>
+                <div class="post"></div>
+                <div class="post"></div><div class="post">
+                    <div class="author">
+                        <div class="logo"><img src="/assets/apple-icon.webp" alt=""></div>
+                        <div class="name"><span class="tomato">@</span>sh20raj</div>
+                    </div>
+
+                    <div class="post-content">
+                        <p>
+                    </p>
+                    <img src="/assets/apple-icon.webp" alt="">
+                    </div>
+
+                    
+                    <div class="post-footer">
+                        <div class="like"><ion-icon name="heart-outline"></ion-icon></div>
+                        <div class="dislike"><ion-icon name="heart-dislike-outline"></ion-icon></div>
+                        <div class="comment"><ion-icon name="chatbubble-ellipses-outline"></ion-icon></div>
+                        <div class="share"><ion-icon name="share-outline"></ion-icon></div>
                     </div>
                 </div>
                 <div class="post"></div>
                 <div class="post"></div>
                 <div class="post"></div>
-                <div class="post"></div>
-                <div class="post"></div>
             </div>
         </div>
-        <div class="sidebar">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis laudantium harum error. Ab magni, veritatis ipsa, deleniti aliquam temporibus obcaecati expedita at ipsum distinctio nam provident qui! Libero, doloremque molestias?</div>
+        <div class="sidebar">
+            <div class="menubar">
+                <ul>
+                    <li>Reels</li>
+                    <li>Articles</li>
+                    <li>Images</li>
+                </ul>
+            </div>
+            <div class="playgound">
+                <iframe src="/shorts/" frameborder></iframe>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis laudantium harum error. Ab magni, veritatis ipsa, deleniti aliquam temporibus obcaecati expedita at ipsum distinctio nam provident qui! Libero, doloremque molestias?</div>
+
+
+            </div>
     </main>
     <footer>
         Made with ❤️ by <span>@</span>SH20RAJ
     </footer>
-
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
 </body>
 </html>
