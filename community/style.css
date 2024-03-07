@@ -8,11 +8,24 @@
 }
 
 *::-webkit-scrollbar {
-    display: none;
-  }
+  display: none;
+}
 
+.hidden {
+    display: none;
+}
 .tomato {
   color: var(--pink);
+}
+
+.flex {
+  display: flex;
+}
+ion-icon:hover {
+  color: var(--pink);
+  scale: 1.05;
+  transition: all 0.1s linear;
+  cursor: pointer;
 }
 
 :root {
@@ -21,7 +34,7 @@
   --color: #fff;
   --lightbg: rgba(239, 149, 129, 0.498);
   --margine: 20px;
-  --box-shadow:  0px 2px 12px ;
+  --box-shadow: 0px 2px 12px;
 }
 body {
   min-height: 100vh;
@@ -61,7 +74,7 @@ nav ul li {
   height: 40px;
   width: 40px;
   transition: all 0.3s ease-in;
-  padding-top:4px ;
+  padding-top: 4px;
   box-shadow: var(--box-shadow);
 }
 nav ul li:hover {
@@ -78,6 +91,12 @@ main {
   flex-direction: row-reverse;
 }
 
+.toolbar {
+}
+
+.icon-inner:hover {
+}
+
 main .posts {
   /* border: 2px solid tomato; */
   height: 100vh;
@@ -89,11 +108,19 @@ main .posts {
 .newpost {
   border: 2px solid skyblue;
   padding: var(--margine);
-  height: 150px;
+  height: 170px;
   border-radius: var(--margine);
   margin: var(--margine);
 }
-
+.toolbar ul {
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+  font-size: 25px;
+  list-style: none;
+  border-top: 2px solid;
+  padding-top: 4px;
+}
 .newpost textarea {
   padding: var(--margine);
   background-color: transparent;
@@ -183,10 +210,10 @@ main .posts {
   box-shadow: var(--box-shadow);
 }
 
-.post-footer *:hover{
-    color: var(--pink);
-    scale: 1.05;
-    transition: all .1s linear;
+.post-footer *:hover {
+  color: var(--pink);
+  scale: 1.05;
+  transition: all 0.1s linear;
 }
 .post-content {
   /* text-align: center; */
@@ -238,12 +265,10 @@ svg {
   }
   main {
     flex-direction: column;
-
   }
-  
-  .posts {
-  overflow: visible;
-  height: 100%;
 
+  .posts {
+    overflow: visible;
+    height: 100%;
   }
 }
