@@ -97,6 +97,7 @@ main {
 }
 
 .icon-inner:hover {
+  color: #fff;
 }
 
 main .posts {
