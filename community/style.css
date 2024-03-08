@@ -387,7 +387,7 @@ iframe::-webkit-scrollbar {
   top: 70px;
   padding: var(--margine);
   box-shadow: var(--box-shadow);
-  background: linear-gradient(pink,white);
+  background: linear-gradient(black,pink,white);
   z-index: 2;
   margin-top: var(--margine);
 
