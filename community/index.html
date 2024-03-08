@@ -90,9 +90,44 @@
                             What's your Gender!
                         </p>
                         <div class="poll">
-                            <input id="postid1" name="postid2" type="radio" value="Male"/>
-                            <input id="postid2" name="postid2" type="radio" value="Male"/>
-                            <input id="postid3" name="postid2" type="radio" value="Male"/>
+                            <div class="container">
+                                <h1 class="poll-question">
+                                  Do you like programming?
+                                </h1>
+                                <form id="poll-form" class="poll-form">
+                                    <label>
+                                        <input type="radio"
+                                               name="vote"
+                                               value="yes"> Yes
+                                    </label>
+                                    <label>
+                                        <input type="radio"
+                                               name="vote"
+                                               value="no"> No
+                                    </label>
+                                    <button type="submit"
+                                            class="vote-button">
+                                      Vote
+                                    </button>
+                                </form>
+                                <div id="results" class="results">
+                                    <h2 class="results-title">
+                                      Results
+                                    </h2>
+                                    <div class="results-count">
+                                        <p>Yes: 
+                                          <span id="yes-count"
+                                                class="count">0
+                                          </span>
+                                        </p>
+                                        <p>No: 
+                                          <span id="no-count"
+                                                     class="count">0
+                                          </span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <!-- <img src="../assets/sh.jpeg" alt=""> -->
                     </div>
@@ -222,21 +257,6 @@
                     Images
                 </div>
             </div>
-        
-            <script>
-                function showSection(section) {
-                    // Remove 'active' class from all sections
-                    document.querySelectorAll('.playground .layout').forEach(function(el) {
-                        el.classList.remove('active');
-                    });
-        
-                    // Add 'active' class to the selected section
-                    document.querySelector(`.${section}`).classList.add('active');
-        
-                    // Scroll the selected section into view
-                    document.querySelector(`.${section}`).scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-                }
-            </script>
 
         </div>
     </main>
@@ -245,7 +265,7 @@
     </footer>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
+    <script src="script.js" defer></script>
 </body>
 
 </html>
