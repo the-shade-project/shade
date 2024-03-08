@@ -274,7 +274,7 @@ iframe::-webkit-scrollbar {
   scroll-behavior: smooth;
   white-space: nowrap;
   display: flex; /* Added */
-  gap: 10px;
+  gap: var(--margine);
 }
 .playground .layout {
   flex: 1 0 auto; /* Added */
