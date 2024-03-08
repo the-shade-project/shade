@@ -246,6 +246,8 @@ main .posts {
 main .sidebar {
   width: 100%;
   padding: var(--margine);
+  transition: all .4s cubic-bezier(0.075, 0.82, 0.165, 1);
+
 }
 
 .playground {
@@ -253,6 +255,7 @@ main .sidebar {
     position: sticky;  
     top: 70px;
     padding: var(--margine);
+    /* background: var(--bg); */
   }
 .playground iframe {
     width: 100%;
@@ -369,8 +372,61 @@ iframe::-webkit-scrollbar {
   font-weight: bold;
 }
 
+.commentviewer {
+  position: static;
+  height: 400px;
+  width: 100%;
+  bottom: 0px;
+  border-radius: 20px;
+  border: 2px solid hotpink;
+  display: none;
+  margin: auto;
+  /* opacity: 0.8; */
+  transition: all .2s linear;
+  animation: show 1s ;
+  top: 70px;
+  padding: var(--margine);
+  box-shadow: var(--box-shadow);
+  background: linear-gradient(pink,white);
+  z-index: 2;
+  margin-top: var(--margine);
 
+}
+.commentviewer .comment {
+  /* display: flex; */
+  gap: 20px;
+  align-items: center;
+  border-bottom: .2px solid;
+}
+.commentviewer .comment  .author {
+  display: inline-flex;
+  align-items: center;
+  height: 30px;
+  gap: 20px;
+  /* border: 2px solid; */
+  margin-right: 10px;
+  color: #71aceb;
+}
 
+.comment .author img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+@keyframes show {
+  from {
+    scale: 1.01;
+    opacity: .6;
+    /* display: none; */
+  }
+  100% {
+    opacity: 1;
+    scale: 1;
+    /* display: inline; */
+  }
+  
+}
 
 
 
@@ -420,4 +476,9 @@ footer span {
 .ssb1::-webkit-scrollbar-thumb {
   background-color: #dfdfdf;
   border-radius: 10px;
+}
+
+.visible {
+  display: block;
+  /* z-index: 2; */
 }
