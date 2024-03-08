@@ -58,6 +58,7 @@ nav {
   position: sticky;
   top: 0;
   z-index: 1;
+  height: 70px;
 }
 
 nav ul {
@@ -91,7 +92,7 @@ main {
   /* border: 2px solid; */
   /* height: 100lvh; */
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   /* overflow: auto; */
 }
 
@@ -249,7 +250,7 @@ main .sidebar {
 
 .playground {
     position: sticky;  
-    top: 40px;
+    top: 70px;
     padding: var(--margine);
   }
 .playground iframe {
@@ -262,10 +263,10 @@ iframe::-webkit-scrollbar {
   background-color: red blue;
 }
 .playground {
-  background-color: red;
+  /* background-color: red; */
   height: 70vh;
   width: 100%;
-  padding: 0;
+  padding: 10px;
   /* text-wrap: nowrap; */
   overflow: auto;
   scroll-snap-type: x mandatory;
@@ -273,20 +274,24 @@ iframe::-webkit-scrollbar {
   scroll-behavior: smooth;
   white-space: nowrap;
   display: flex; /* Added */
+  gap: 10px;
 }
 .playground .layout {
   flex: 1 0 auto; /* Added */
   display: inline-block;
-  background-color: beige;
+  background-color: var(--bg);
   width: 100%;
+  padding: var(--margine);
+  border-radius: var(--margine);
   /* margin: 4px; */
   height: 100%;
   /* border: 2px solid red; */
   scroll-snap-align: center;
   scroll-snap-stop: always;
+  box-shadow: var(--box-shadow);
 }
 .playground .layout:nth-child(2) {
-  background-color: yellowgreen;
+  /* background-color: yellowgreen; */
 }
 .playground .layout:nth-child(3) {
   /* background-color: blue; */
