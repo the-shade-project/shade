@@ -262,28 +262,45 @@ iframe::-webkit-scrollbar {
   background-color: red blue;
 }
 .playground {
-  /* display: flex; */
-  max-width: 100%;
-  overflow: auto;
-  text-wrap: nowrap;
-}
-
-.playground .layout {
-  /* position: absolute; */
-  display: inline-block;
-  background-color: aqua;
+  background-color: red;
+  height: 70vh;
   width: 100%;
-  height: 100vh;
+  padding: 0;
+  /* text-wrap: nowrap; */
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+  scroll-snap-align: center;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+  display: flex; /* Added */
+}
+.playground .layout {
+  flex: 1 0 auto; /* Added */
+  display: inline-block;
+  background-color: beige;
+  width: 100%;
+  /* margin: 4px; */
+  height: 100%;
+  /* border: 2px solid red; */
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
 }
 .playground .layout:nth-child(2) {
   background-color: yellowgreen;
 }
 .playground .layout:nth-child(3) {
-  background-color: blue;
+  /* background-color: blue; */
 }
 
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
 
-
+/* Style for the active section */
+.active {
+  /* border: 2px solid black; */
+}
 
 
 

@@ -202,22 +202,38 @@
         <div class="sidebar">
             <div class="menubar">
                 <ul>
-                    <li>Reels</li>
-                    <li>Articles</li>
-                    <li>Images</li>
+                    <li onclick="showSection('section1')">Reels</li>
+                    <li onclick="showSection('section2')">Articles</li>
+                    <li onclick="showSection('section3')">Images</li>
                 </ul>
             </div>
+            
             <div class="playground">
-                <!-- <iframe class="ssb1" src="/shorts/" style="overflow:hidden" frameborder seamless="seamless" scrolling="no" ></iframe>
-                <br>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis laudantium harum error. Ab magni,
-                veritatis ipsa, deleniti aliquam temporibus obcaecati expedita at ipsum distinctio nam provident qui!
-                Libero, doloremque molestias? -->
-                <div class="layout"></div>
-                <div class="layout"></div>
-                <div class="layout"></div>
+                <div class="layout section1">
+                    Reels
+                </div>
+                <div class="layout section2">
+                    Articles
+                </div>
+                <div class="layout section3">
+                    Images
+                </div>
             </div>
-
+        
+            <script>
+                function showSection(section) {
+                    // Remove 'active' class from all sections
+                    document.querySelectorAll('.playground .layout').forEach(function(el) {
+                        el.classList.remove('active');
+                    });
+        
+                    // Add 'active' class to the selected section
+                    document.querySelector(`.${section}`).classList.add('active');
+        
+                    // Scroll the selected section into view
+                    document.querySelector(`.${section}`).scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                }
+            </script>
 
         </div>
     </main>
